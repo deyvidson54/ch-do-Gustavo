@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #e0ecf7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #3a6ea5;
+  margin: 10px 0;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #6b7c93;
+  margin-bottom: 0;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  font-size: 1.1rem;
+  color: #2b4c7e;
+}
+
+.bebe-img {
+  width: 120px;
+  margin: 20px auto;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 10px;
+  background: #3a6ea5;
+  color: #fff;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #2b4c7e;
+}
+
+.presentes {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  font-size: 1.2rem;
+  color: #2b4c7e;
+}
+
+.presentes li {
+  margin: 10px 0;
+}
