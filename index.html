@@ -1,31 +1,142 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chá do Gustavo</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chá de Bebê - Baby Shower Bliss</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600;700&display=swap');
+        
+        .cursive {
+            font-family: 'Pacifico', cursive;
+        }
+        
+        .bg-pattern {
+            background-image: url('http://static.photos/vintage/1024x576/42');
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+        }
+        
+        .gift-box {
+            transition: all 0.3s ease;
+        }
+        
+        .gift-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
-<body>
-  <div class="container">
-    <div class="card fade-in">
-      <h3 class="slide-down">chá do</h3>
-      <h1 class="slide-down delay-1">Gustavo</h1>
-      
-      <div class="info slide-up delay-2">
-        <p><strong>Sábado</strong></p>
-        <p><strong>20 Outubro</strong></p>
-        <p><strong>às 18:00</strong></p>
-      </div>
+<body class="bg-pink-50 font-['Poppins']">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="bg-pattern bg-pink-600 bg-opacity-90 text-white py-8 px-4 text-center">
+            <h1 class="cursive text-4xl md:text-6xl mb-2">Baby Shower Bliss</h1>
+            <p class="text-xl md:text-2xl cursive">Celebrando a chegada do nosso bebê</p>
+        </header>
 
-      <img src="img/sapatinhos.png" alt="Sapatinhos de bebê" class="bebe-img fade-in delay-3">
+        <!-- Main Content -->
+        <main class="flex-grow container mx-auto px-4 py-8">
+            <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+                <!-- Image Banner -->
+                <div class="h-48 md:h-64 bg-cover bg-center" style="background-image: url('http://static.photos/baby/1024x576/12')"></div>
 
-      <div class="botoes">
-        <a href="https://forms.gle/SEU_LINK_DO_FORMS" target="_blank" class="btn bounce">✅ Confirmar presença</a>
-        <a href="https://maps.google.com/?q=SUA_LOCALIZACAO" target="_blank" class="btn bounce">📍 Localização</a>
-        <a href="presentes.html" class="btn bounce">🎁 Sugestões de presentes</a>
-      </div>
+                <!-- Event Details -->
+                <div class="p-6 md:p-8">
+                    <div class="text-center mb-8">
+                        <h2 class="text-2xl md:text-3xl font-bold text-pink-600 mb-2 cursive">Você está convidado!</h2>
+                        <p class="text-gray-600 mb-4">Para celebrar a chegada do nosso pequeno milagre</p>
+                        
+                        <div class="flex justify-center space-x-2 mb-4">
+                            <i data-feather="calendar" class="text-pink-500"></i>
+                            <span class="font-medium">15 de Novembro, 2023</span>
+                        </div>
+                        <div class="flex justify-center space-x-2">
+                            <i data-feather="clock" class="text-pink-500"></i>
+                            <span class="font-medium">Às 15:00 horas</span>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+                        <a href="https://forms.google.com/link-para-o-formulario" target="_blank" class="bg-pink-500 hover:bg-pink-600 text-white py-3 px-4 rounded-lg text-center transition flex items-center justify-center space-x-2">
+                            <i data-feather="check-circle"></i>
+                            <span>Confirmar Presença</span>
+                        </a>
+                        <a href="https://maps.google.com/link-para-local" target="_blank" class="bg-purple-500 hover:bg-purple-600 text-white py-3 px-4 rounded-lg text-center transition flex items-center justify-center space-x-2">
+                            <i data-feather="map-pin"></i>
+                            <span>Localização</span>
+                        </a>
+                        <a href="presentes.html" class="bg-teal-500 hover:bg-teal-600 text-white py-3 px-4 rounded-lg text-center transition flex items-center justify-center space-x-2">
+                            <i data-feather="gift"></i>
+                            <span>Sugestões de Presente</span>
+                        </a>
+                    </div>
+
+                    <!-- Countdown -->
+                    <div class="mt-10 text-center">
+                        <h3 class="text-xl font-medium text-gray-700 mb-4">Contagem Regressiva</h3>
+                        <div class="flex justify-center space-x-2 md:space-x-4">
+                            <div class="bg-pink-100 rounded-lg p-3 w-16 md:w-20">
+                                <div class="text-2xl md:text-3xl font-bold text-pink-600" id="days">00</div>
+                                <div class="text-xs md:text-sm text-gray-500">Dias</div>
+                            </div>
+                            <div class="bg-pink-100 rounded-lg p-3 w-16 md:w-20">
+                                <div class="text-2xl md:text-3xl font-bold text-pink-600" id="hours">00</div>
+                                <div class="text-xs md:text-sm text-gray-500">Horas</div>
+                            </div>
+                            <div class="bg-pink-100 rounded-lg p-3 w-16 md:w-20">
+                                <div class="text-2xl md:text-3xl font-bold text-pink-600" id="minutes">00</div>
+                                <div class="text-xs md:text-sm text-gray-500">Minutos</div>
+                            </div>
+                            <div class="bg-pink-100 rounded-lg p-3 w-16 md:w-20">
+                                <div class="text-2xl md:text-3xl font-bold text-pink-600" id="seconds">00</div>
+                                <div class="text-xs md:text-sm text-gray-500">Segundos</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-pink-800 text-white py-6 px-4 text-center">
+            <p class="cursive text-xl mb-2">Com amor,</p>
+            <p>Família [Seu Sobrenome]</p>
+            <div class="mt-4 flex justify-center space-x-4">
+                <i data-feather="phone" class="w-5 h-5"></i>
+                <i data-feather="mail" class="w-5 h-5"></i>
+                <i data-feather="instagram" class="w-5 h-5"></i>
+            </div>
+        </footer>
     </div>
-  </div>
+
+    <script>
+        // Countdown timer
+        function updateCountdown() {
+            const eventDate = new Date('November 15, 2023 15:00:00').getTime();
+            const now = new Date().getTime();
+            const distance = eventDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('days').innerHTML = days.toString().padStart(2, '0');
+            document.getElementById('hours').innerHTML = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').innerHTML = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').innerHTML = seconds.toString().padStart(2, '0');
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        feather.replace();
+    </script>
 </body>
 </html>
