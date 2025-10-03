@@ -1,22 +1,147 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sugestões de Presentes</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugestões de Presentes - Baby Shower Bliss</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600;700&display=swap');
+        
+        .cursive {
+            font-family: 'Pacifico', cursive;
+        }
+        
+        .bg-pattern {
+            background-image: url('http://static.photos/vintage/1024x576/42');
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+        }
+        
+        .gift-item {
+            transition: all 0.3s ease;
+        }
+        
+        .gift-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
-<body>
-  <div class="container">
-    <div class="card fade-in">
-      <h1 class="slide-down">🎁 Sugestões de Presentes</h1>
-      <ul class="presentes slide-up delay-1">
-        <li>🍼 Fralda tamanho M</li>
-        <li>🍼 Fralda tamanho G</li>
-        <li>💙 Mimo (à sua escolha)</li>
-      </ul>
-      <a href="index.html" class="btn bounce">⬅ Voltar ao convite</a>
+<body class="bg-pink-50 font-['Poppins']">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="bg-pattern bg-pink-600 bg-opacity-90 text-white py-8 px-4 text-center">
+            <div class="container mx-auto">
+                <a href="index.html" class="absolute left-4 top-4 text-white hover:text-pink-200 transition">
+                    <i data-feather="arrow-left" class="w-6 h-6"></i>
+                </a>
+                <h1 class="cursive text-4xl md:text-5xl mb-2">Sugestões de Presentes</h1>
+                <p class="text-lg">Para ajudar na escolha do presente perfeito</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-grow container mx-auto px-4 py-8">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-8">
+                    <div class="p-6 md:p-8">
+                        <h2 class="text-2xl font-bold text-pink-600 mb-4 cursive">Lista de Presentes</h2>
+                        <p class="text-gray-600 mb-6">Sua presença já é o maior presente, mas se quiser nos presentear, aqui estão algumas sugestões:</p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Gift Item 1 -->
+                            <div class="gift-item bg-pink-50 rounded-lg p-6 border border-pink-100">
+                                <div class="flex items-start space-x-4">
+                                    <div class="bg-pink-100 p-3 rounded-full">
+                                        <i data-feather="package" class="text-pink-600 w-6 h-6"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-lg text-gray-800">Fraldas Tamanho M</h3>
+                                        <p class="text-gray-600 mt-1">Para quando o bebê estiver maiorzinho</p>
+                                        <div class="mt-2 text-sm text-pink-500 font-medium">Quantidade sugerida: 2 pacotes</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Gift Item 2 -->
+                            <div class="gift-item bg-pink-50 rounded-lg p-6 border border-pink-100">
+                                <div class="flex items-start space-x-4">
+                                    <div class="bg-pink-100 p-3 rounded-full">
+                                        <i data-feather="package" class="text-pink-600 w-6 h-6"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-lg text-gray-800">Fraldas Tamanho G</h3>
+                                        <p class="text-gray-600 mt-1">Para a fase seguinte de crescimento</p>
+                                        <div class="mt-2 text-sm text-pink-500 font-medium">Quantidade sugerida: 2 pacotes</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Gift Item 3 -->
+                            <div class="gift-item bg-pink-50 rounded-lg p-6 border border-pink-100">
+                                <div class="flex items-start space-x-4">
+                                    <div class="bg-pink-100 p-3 rounded-full">
+                                        <i data-feather="gift" class="text-pink-600 w-6 h-6"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-lg text-gray-800">Mimo</h3>
+                                        <p class="text-gray-600 mt-1">Um presentinho especial para o bebê</p>
+                                        <div class="mt-2 text-sm text-pink-500">Pode ser uma lembrança, roupa ou brinquedo</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Gift Item 4 -->
+                            <div class="gift-item bg-pink-50 rounded-lg p-6 border border-pink-100">
+                                <div class="flex items-start space-x-4">
+                                    <div class="bg-pink-100 p-3 rounded-full">
+                                        <i data-feather="heart" class="text-pink-600 w-6 h-6"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-lg text-gray-800">Presente Surpresa</h3>
+                                        <p class="text-gray-600 mt-1">Sua criatividade é bem-vinda!</p>
+                                        <div class="mt-2 text-sm text-pink-500">Qualquer outro presente de sua escolha</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="p-6 md:p-8">
+                        <h2 class="text-2xl font-bold text-pink-600 mb-4 cursive">Observações</h2>
+                        <div class="space-y-4 text-gray-600">
+                            <p>☑️ Todas as sugestões são opcionais</p>
+                            <p>☑️ Sua presença é o mais importante para nós</p>
+                            <p>☑️ Caso prefira, pode contribuir com o enxoval do bebê</p>
+                            <p>☑️ Não se esqueça de colocar seu nome no presente para sabermos agradecer!</p>
+                        </div>
+                        
+                        <div class="mt-8 text-center">
+                            <a href="index.html" class="inline-flex items-center px-6 py-3 bg-pink-500 hover:bg-pink-600 text-white rounded-lg transition">
+                                <i data-feather="arrow-left" class="mr-2"></i>
+                                Voltar para o convite
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-pink-800 text-white py-6 px-4 text-center">
+            <p class="cursive text-xl mb-2">Obrigado pelo carinho!</p>
+            <p>Família [Seu Sobrenome]</p>
+        </footer>
     </div>
-  </div>
+
+    <script>
+        feather.replace();
+    </script>
 </body>
 </html>
